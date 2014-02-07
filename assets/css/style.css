@@ -1,6 +1,6 @@
  body {
         padding-top: 20px;
-        padding-bottom: 40px;
+       /* padding-bottom: 40px;*/
       }
 
       /* Custom container */
@@ -33,3 +33,72 @@
       .marketing p + h4 {
         margin-top: 28px;
       }
+
+      #footer{
+    color:#fff;
+    background-color:#424142;
+    font-size:15px;
+    line-height:160%;
+}
+
+#footer_1_3{
+    display:inline;
+    color:#fff;
+    float:left;
+    padding-left:20%;
+    letter-spacing:0pt;
+    font-size:15px;
+}
+
+#footer_2_3 {
+    display:inline;
+    color:#fff;
+    height:100px;
+    font-size:15px;
+    line-height:160%;
+}
+
+#footer_3_3 {
+    display:inline;
+    color:#fff;
+    padding-right:20px;
+    font-size:15px;
+    line-height:160%;
+}
+
+#footer_contact_us{
+    margin-left:20%; 
+    font-size:22px;
+}
+#col_holder_footer{
+    padding-bottom:150px;
+    margin-left:auto;
+    margin-right: auto;
+    width: 700px;
+}
+#col_1_footer {
+    float:left;
+    position:relative;
+    width:28%;
+    padding-right:2%;
+    padding-top:2%;
+}
+
+#col_2_footer {
+    float:left;
+    position:relative;
+    width:28%;
+    padding: 2% 4% 0 6%;
+}
+
+#col_3_footer {
+    float:left;
+    position:relative;
+    width:28%;
+    padding-left: 2%;
+    padding-top: 2%;
+}
+
+#col_holder{
+    padding-bottom:30%;
+}
