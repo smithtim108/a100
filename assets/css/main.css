@@ -1,28 +1,42 @@
+
+
 /* Authors: A100 Apprentice Team C++
  * Members: Chris Impastato, Julio Mansilla, Duke Noi, Carrrington Ward
  * 
  * Built as part of the Apprentice100 Program
  * Winter Cohort 2014 */
 
-body {
-  background: white;
-  color: #f5f6f7; }
 
 
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border: none; }
+/** GLOBAL STYLES
+ ********************/
 
+  body {
+    background: white;
+    color: #f5f6f7; }
 
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none; }
 
+  a:link,
+  a:visited,
+  a:active {
+    font-weight: 600;
+    color: #f5f6f7;
+    text-decoration: none; }
 
-
-
-
-
-
+  a:link:hover,
+  a:visited:hover,
+  a:active:hover {
+    color: #e1e1e1;
+      -webkit-transition: color 1s;
+      -moz-transition: color 1s;
+      -ms-transition: color 1s;
+      -o-transition: color 1s;
+      transition: color 1s; }
 
 
 /** CONTENT MODULES
@@ -79,30 +93,28 @@ body {
 
     /* Type */
 
-      /* GLOBAL STYLES */
+      /* Alignment */
+        .centered { text-align: center; }
 
-        /* Alignment */
-          .centered { text-align: center; }
+        .rightAlign { text-align: right; }
 
-          .rightAlign { text-align: right; }
+        .leftAlign { text-align: left; }
 
-          .leftAlign { text-align: left; }
+        .allCaps { text-transform: uppercase; }
 
-          .allCaps { text-transform: uppercase; }
+      /* Margins */
+        .topMarginSmall { margin-top: 30px; }
 
-        /* Margins */
-          .topMarginSmall { margin-top: 30px; }
+        .topMarginMedium { margin-top: 50px; }
 
-          .topMarginMedium { margin-top: 50px; }
+        .topMarginBig {margin-top: 100px; }
 
-          .topMarginBig {margin-top: 100px; }
+        .bottomMargin { margin-bottom: 30px; }
 
-          .bottomMargin { margin-bottom: 30px; }
+      /* Sizing */
+        .small { font-size: 1em; }
 
-        /* Sizing */
-          .small { font-size: 1em; }
-
-      /* HEADERS*/
+      /* Headers */
         .headerDarkBG {
             font-family: 'Montserrat', sans-serif;
             font-weight: 400;
@@ -127,8 +139,7 @@ body {
           line-height: 1.3em;
           color: white; }
 
-
-      /* CONTENT */
+      /* Content */
         .textDarkBG {
           font-family: 'Open Sans', sans-serif;
           font-weight: 400;
@@ -340,8 +351,7 @@ body {
           letter-spacing: -0.01em;
           color: #3e3e3e;
           text-align: left; }
-
-    
+   
     /* CONTACT */
     
       /* Type */
@@ -460,24 +470,6 @@ body {
  ******************************/
 
 /*
-
-a:link,
-a:visited,
-a:active {
-  font-weight: 600;
-  color: #f5f6f7;
-  text-decoration: none; }
-
-a:link:hover,
-a:visited:hover,
-a:active:hover {
-  color: #e1e1e1;
-    -webkit-transition: color 1s;
-    -moz-transition: color 1s;
-    -ms-transition: color 1s;
-    -o-transition: color 1s;
-    transition: color 1s; }
-
 .mb-7 {
   margin-bottom: 70px;
   padding-bottom: 100px; }
@@ -515,16 +507,16 @@ hr {
   margin: 1em 0;
   padding: 0; } */
 
-  /* NAVIGATION */
-      /* General */
-       .nav {
-          position: fixed;
-          width: 30px;
-          height: 84px;
-          z-index: 100;
-          right: 0;
-          top: 50%;
-          margin-top: -42px; }
+/* NAVIGATION */
+  /* General */
+    .nav {
+      position: fixed;
+      width: 30px;
+      height: 84px;
+      z-index: 100;
+      right: 0;
+      top: 50%;
+      margin-top: -42px; }
 
       /* Links */
         .nav a {
@@ -557,7 +549,7 @@ hr {
             transform: scale(1); }
 
   /* FOOTER */
-      #networks {
+    #networks {
       width: 100%;
       height: 100%;
       padding-top: 200px; }
