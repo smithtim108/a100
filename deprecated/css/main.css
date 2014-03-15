@@ -11,12 +11,9 @@
 /** GLOBAL STYLES
  ********************/
 
-  html { height: 100%; }
-  
   body {
     background: white;
-    color: #f5f6f7;
-    height: 100%; }
+    color: #f5f6f7; }
 
   *, *:before, *:after {
     -moz-box-sizing: border-box;
@@ -41,6 +38,21 @@
       -o-transition: color 1s;
       transition: color 1s; }
 
+  html, body { height: 100%; }
+
+  #showcase {
+    display: table;
+    background: url("../img/heroBG.jpg") no-repeat;
+    background-size: 100% auto;
+    width: 100%;
+    min-height: 100%;
+    text-align: center; }
+
+  #showcaseContent {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
 
 /** CONTENT MODULES
  ********************/
@@ -50,6 +62,19 @@
     /* Backgrounds */
 
       #employerCallOut { background: #7b1219; }
+
+      #hero {
+        background: url("../img/heroBG.jpg") no-repeat;
+        background-size: 100% auto;
+        height: auto;
+        text-align: center;
+        position: relative; }
+
+      .hero-block {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        margin-top: -195px; }
 
       #programXS,
       #program,
@@ -153,17 +178,10 @@
 
 
     /* HERO */
-      #hero {
-        display: table;
-        background: url("../img/heroBG.jpg") no-repeat;
-        background-size: 100% auto;
-        width: 100%;
-        min-height: 100%;
-        text-align: center; }
-
-      #heroContent {
-        display: table-cell;
-        vertical-align: middle; }
+      .employerLink {
+        position: relative;
+        top: 10%;
+        left: 53%; }
 
       /* Type */
         .heading {
@@ -209,6 +227,13 @@
           left: 53%; */
           color: #7b1219; }
 
+        .companyLinkXS {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+          font-size: .95em;
+          letter-spacing: -.045em;
+          color: #7b1219; }
+
         .moreInfo {
          bottom: 30px;
          left: 45.85%;
@@ -221,13 +246,28 @@
           color: #919191; }
 
       /* Images */
+        .heroBG {
+          max-width: 100%;
+          height: auto; }
 
-        #heroContentMain .img { 
-           max-height: 45%;
+        #a100Logo .img { 
+           max-height: 35%;
            width: auto; }
 
+        .down-arrow {
+          width: 29px;
+          height: 18px;
+          background: url("../img/arrowInfo.png") no-repeat; }
+
+        .heroApply { background: url("../img/buttonApply.png") no-repeat; }
+
+        .hero-image {
+          position: relative;
+          width: auto;
+          height: auto; }
+
       /* Links */
-        #heroContent a:hover {
+        .hero-block a:hover {
           color: #0091ba;
             -webkit-transition: color 1s;
             -moz-transition: color 1s;
@@ -235,10 +275,9 @@
             -o-transition: color 1s;
             transition: color 1s;}
 
-        #heroContent a {
+        .hero-block a {
           color: #7b7c7f;
           text-decoration: none; }
-
 
     /* PROGRAM */
       /* Type */
@@ -248,7 +287,6 @@
           text-align: center;
           font-style: italic;
           font-size: 1.25em; }
-
 
     /* TESTIMONIALS */
       /* Text */
@@ -269,7 +307,8 @@
           color: white; }
 
       /* Images */
-        .topPadding { padding-top: 1px; }
+        .topPadding {
+          padding-top: 1px; }
 
     
     /* TECHNOLOGIES */
@@ -303,7 +342,6 @@
       /* Tables */
         #skills tr td { padding-top: 20px; }
 
-
     /* CURRICULUM */
 
       .test {
@@ -328,7 +366,6 @@
           letter-spacing: -0.01em;
           color: #3e3e3e;
           text-align: left; }
-
    
     /* CONTACT */
     
@@ -381,9 +418,7 @@
       background: #ebecee;
       padding: 50px; }
 
-
   /* HERO XS */
-
     /* Type */
       .subheadingXS {
         font-family: 'Open Sans', sans-serif;
@@ -406,18 +441,10 @@
           color: #7b7c7f;
           text-decoration: none; }
 
-      .companyLinkXS {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 400;
-        font-size: .95em;
-        letter-spacing: -.045em;
-        color: #7b1219; }
-
     /* Images */
       .heroApplyXS {
         padding-top: 15px;
         padding-bottom: 50px; }
-
 
   /* Program XS */
     /* Type */
@@ -428,7 +455,6 @@
         font-style: italic;
         font-size: 1.1em; }
 
-
   /* Employer XS */
     /* Text */
       .employerXS {
@@ -438,9 +464,7 @@
         letter-spacing: -.045em;
         color: white; }
 
-
   /* Contact XS */
-
     /* Images */
         #contactXS i {
           font-size: 25px;
@@ -453,3 +477,94 @@
         #contactXS .twitter:hover { color: #2094CA; }
 
         #contactXS .mail:hover { color: #f39c12; }
+
+
+
+
+/** DEPRECATED
+ ******************************/
+
+/*
+.mb-7 {
+  margin-bottom: 70px;
+  padding-bottom: 100px; }
+
+.footer-block {
+  height: 180px;
+  margin-top: -90px; }
+
+#work { background: #3498db; }
+
+#work .showcase {
+  width: 100%;
+  padding: 0px; }
+
+.showcase-tiles {
+  padding-top: 0px;
+  margin-top: 0px;
+  display: table-row; }
+
+.showcase-info { display: table-row; }
+
+.showcase-info { text-align: center; }
+
+nav ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: none; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; } */
+
+/* NAVIGATION */
+  /* General */
+    .nav {
+      position: fixed;
+      width: 30px;
+      height: 84px;
+      z-index: 100;
+      right: 0;
+      top: 50%;
+      margin-top: -42px; }
+
+      /* Links */
+        .nav a {
+          text-indent: -9999px;
+          display: block;
+            width: 12px;
+            height: 12px;
+             margin-bottom: 10px;
+            background: rgba(36,31,33,0.5);
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -o-border-radius: 20px;
+            border-radius: 20px;
+            -webkit-transform: scale(0.7);
+            -moz-transform: scale(0.7);
+            -ms-transform: scale(0.7);
+            -o-transform: scale(0.7);
+            transform: scale(0.7);
+            -webkit-transition: 200ms -webkit-transform ease-in-out, 200ms opacity ease-in;
+            -moz-transition: 200ms -moz-transform ease-in-out, 200ms opacity ease-in;
+            -ms-transition: 200ms -ms-transform ease-in-out, 200ms opacity ease-in;
+            transition: 200ms -webkit-transform ease-in-out, 200ms opacity ease-in;
+            cursor: pointer; }
+  
+        .nav a:hover {
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            transform: scale(1); }
+
+  /* FOOTER */
+    #networks {
+      width: 100%;
+      height: 100%;
+      padding-top: 200px; }
